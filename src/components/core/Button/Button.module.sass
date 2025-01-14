@@ -1,0 +1,38 @@
+.button
+  border-radius: 6px
+  border: none
+  cursor: pointer
+  width: auto
+  font-family: Roboto, sans-serif
+  transition: all .25s ease-out
+  text-align: center
+  display: flex
+  justify-content: center
+  &[disabled]
+    opacity: 0.5
+    cursor: default
+
+.normal
+  padding: 5px 12px
+  font-size: 13px
+  font-weight: 500
+
+.large
+  padding: 10px 24px
+  font-size: 15px
+  font-weight: 700
+  min-height: 44px
+
+.primary
+  color: #FFFFFF
+  background-color: var(--primary)
+  &[disabled]
+    &:hover
+      background-color: var(--primary)
+
+  &:hover
+    background-color: var(--primary-hover)
+  &:active
+    background-color: var(--primary-active)
+  &[disabled=true]
+    background-color: var(--primary-disabled)
